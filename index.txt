@@ -1,0 +1,9 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome. Welcome to City 17.</title>
+  </head>
+  <body>
+    <p>Okay cool. Test test.</p>
+  </body>
+</html>
