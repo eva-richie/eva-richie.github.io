@@ -423,20 +423,20 @@ body.white{
 .background-color-layer{
     background-size:cover;
     opacity:.15;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     position:absolute;
     z-index:-1;
     top:0;
     width:100%;
     left:0;
     right:0;
-    bottom:30%;
-    box-shadow:inset 0 -40px 60px 10px #ff0060
+    bottom:0%;
+    box-shadow:inset 0 -40px 60px 10px #dd1cc9
 }
 .card{
-    border-radius:.25rem;
-    background-color:#fff;
-    border:1px solid rgba(0,0,0,.125);
+    border-radius:1.85rem;
+    background-color:rgb(246, 171, 230);
+    border:4px solid rgba(255, 136, 237, 0.797);
     margin-bottom:3rem
 }
 .card .h2,.card h2{
