@@ -569,3 +569,25 @@ body.white{
 .template-example h3{
     font-size:20px
 }
+
+.name-logo
+    {
+        width:29%;
+    }
+
+/* Styles for mobile devices in portrait (vertical) orientation */
+@media (max-width: 768px) and (orientation: portrait) {
+    /* Your mobile-specific styles here */
+    .name-logo
+    {
+        width:86%;
+    }
+  }
+
+
+  .card-block h2 
+  {
+    text-align:center;
+    background: linear-gradient(to right, #00000000 0%, #234f5a00 43%, #8228851c 46%, #97255322 50%, #8228851c 54%, #234f5a00 57%, #00000000 100%);
+    padding:6px;
+  }
