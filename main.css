@@ -582,6 +582,8 @@ body.white{
       padding:6px;
     }
 
+
+
 /* Styles for mobile devices in portrait (vertical) orientation */
 @media (max-width: 768px) and (orientation: portrait) {
     /* Your mobile-specific styles here */
