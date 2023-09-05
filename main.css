@@ -392,9 +392,9 @@ caption{
     margin-right:auto
 }
 body{
-    background-image:-webkit-linear-gradient(top,#7d04cd,#d48ec6);
-    background-image:-o-linear-gradient(top,#7d04cd,#d48ec6 100%);
-    background-image:linear-gradient(180deg,#7d04cd,#d48ec6);
+    background-image:-webkit-linear-gradient(top,#a1396d,#74193c);
+    background-image:-o-linear-gradient(top,#a1396d,#74193c 100%);
+    background-image:linear-gradient(180deg,#a1396d,#74193c);
     background-repeat:repeat-x
 }
 body.white{
@@ -402,7 +402,8 @@ body.white{
     background-image:none
 }
 .white-text-container .fa-icon,.white-text-container a,.white-text-container h1,.white-text-container h2,.white-text-container h3,.white-text-container h4,.white-text-container h5,.white-text-container p{
-    color:#fff
+    color:rgb(255, 226, 251);
+    font-family: 'Exo 2';
 }
 .content-wrapper{
     position:relative;
@@ -431,12 +432,12 @@ body.white{
     left:0;
     right:0;
     bottom:0%;
-    box-shadow:inset 0 -40px 60px 10px #891cdd
+    box-shadow:inset 0 -40px 60px 10px #a1396d
 }
 .card{
     border-radius:1.85rem;
-    background-color:rgb(230, 171, 217);
-    border:4px solid rgba(179, 97, 166, 0.797);
+    background-color:rgb(230, 201, 223);
+    border:4px solid rgba(110, 66, 103, 0.797);
     margin-bottom:3rem
 }
 .card .h2,.card h2{
