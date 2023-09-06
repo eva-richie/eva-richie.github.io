@@ -95,9 +95,11 @@ img{
     vertical-align:middle
 }
 .img-responsive{
+
     display:block;
     max-width:100%;
-    height:auto
+    height:auto;
+    border-radius: 20px;
 }
 [role=button]{
     cursor:pointer
