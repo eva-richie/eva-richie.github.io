@@ -440,7 +440,7 @@ body.white{
 }
 .card{
     border-radius:1.85rem;
-    background-color:rgb(236, 213, 230);
+    background-color:rgb(230, 201, 223);
     border:4px solid rgba(110, 66, 103, 0.797);
     margin-bottom:3rem
 }
