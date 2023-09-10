@@ -396,9 +396,9 @@ caption{
     margin-right:auto
 }
 body{
-    background-image:-webkit-linear-gradient(top,#a1396d,#74193c);
-    background-image:-o-linear-gradient(top,#a1396d,#74193c 100%);
-    background-image:linear-gradient(180deg,#a1396d,#74193c);
+    background-image:-webkit-linear-gradient(top,#4b1a33,#74193c);
+    background-image:-o-linear-gradient(top,#4b1a33,#74193c 100%);
+    background-image:linear-gradient(180deg,#4b1a33,#74193c);
     background-repeat:repeat-x
 }
 body.white{
@@ -436,7 +436,7 @@ body.white{
     left:0;
     right:0;
     bottom:0%;
-    box-shadow:inset 0 -40px 60px 10px #a1396d
+    box-shadow:inset 0 -40px 60px 10px #4b1a33
 }
 .card{
     border-radius:1.85rem;
