@@ -80,11 +80,11 @@ body{
     background-color:#fff
 }
 a{
-    color:#ff0060;
-    text-decoration:none
+    color:#b3007d;
+    text-decoration:underline
 }
 a:focus,a:hover{
-    color:#b30043;
+    color:#bd3ec9;
     text-decoration:underline
 }
 a:focus{
@@ -115,7 +115,7 @@ img{
 .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{
     font-weight:400;
     line-height:1;
-    color:#777
+    color:rgb(138, 34, 115)
 }
 .h1,.h2,.h3,h1,h2,h3{
     margin-top:25px;
@@ -138,7 +138,7 @@ img{
     font-size:27px
 }
 .h3,.h4,h3,h4{
-    font-size:20px
+    font-size:23px
 }
 .h5,h5{
     font-size:18px
