@@ -396,9 +396,9 @@ caption{
     margin-right:auto
 }
 body{
-    background-image:-webkit-linear-gradient(top,#4b1a33,#74193c);
-    background-image:-o-linear-gradient(top,#4b1a33,#74193c 100%);
-    background-image:linear-gradient(180deg,#4b1a33,#74193c);
+    background-image:-webkit-linear-gradient(top,#401a4b,#6e1974);
+    background-image:-o-linear-gradient(top,#401a4b,#6e1974 100%);
+    background-image:linear-gradient(180deg,#401a4b,#6e1974);
     background-repeat:repeat-x
 }
 body.white{
@@ -583,7 +583,7 @@ body.white{
 
 .name-logo
     {
-        width:29%;
+        width:35%;
     }
 
     .card-block h2 
