@@ -595,7 +595,28 @@ body.white{
 
 
 
-/* Styles for mobile devices in portrait (vertical) orientation */
+
+
+
+/* Attempting to let YouTube embeds scale better responsively */
+.auto-resizable-iframe {
+    max-width: 560px;
+    margin: 0px auto;
+  }
+  
+  .auto-resizable-iframe > div {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0px;
+  }
+  
+  .side-alternate
+  {
+    text-align:right;
+    padding-right:2.5%;
+  }
+
+  /* Styles for mobile devices in portrait (vertical) orientation */
 @media (max-width: 768px) and (orientation: portrait) {
     /* Your mobile-specific styles here */
     .name-logo
@@ -609,6 +630,38 @@ body.white{
       background: linear-gradient(to right, #00000000 0%, #234f5a00 25%, #8228851c 40%, #97255322 50%, #8228851c 60%, #234f5a00 75%, #00000000 100%);
       padding:6px;
     }
+
+    .auto-resizable-iframe {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+      }
+      .auto-resizable-iframe iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+
+      .game 
+      {
+        display:flex; flex-flow: column;
+      }
+
+      .first 
+      {
+        order:1;
+        width:100%;
+      }
+      .second 
+      {
+        order:2;
+        text-align:left;
+      }
+      .side-alternate
+      {
+        text-align:left;
+      }
   }
-
-
