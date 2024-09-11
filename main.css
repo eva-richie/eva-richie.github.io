@@ -80,7 +80,7 @@ body{
     background-color:#fff
 }
 a{
-    color:#b3007d;
+    color:rgb(173, 0, 179);
     text-decoration:underline
 }
 a:focus,a:hover{
@@ -115,7 +115,7 @@ img{
 .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{
     font-weight:400;
     line-height:1;
-    color:rgb(138, 34, 115)
+    color:rgb(132, 35, 146)
 }
 .h1,.h2,.h3,h1,h2,h3{
     margin-top:25px;
