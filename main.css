@@ -616,6 +616,33 @@ body.white{
     padding-right:2.5%;
   }
 
+
+
+/* Skill badges styling*/
+.skill-badge-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows icons to wrap onto new rows */
+    justify-content: space-around; /* Distributes icons evenly */
+    gap: 10px; /* Optional: space between icons */
+    padding: 10px;
+  }
+  
+  .skill-badge {
+    flex-basis: 15%; /* Default width for desktop view */
+  }
+
+  .skill-badge p
+  {
+    text-align: center; /* Center the label below the icon */
+    font-size: smaller;
+  }
+  
+  .skill-badge img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 80px; /* Limit the size of the image */
+  }
+
+
   /* Styles for mobile devices in portrait (vertical) orientation */
 @media (max-width: 768px) and (orientation: portrait) {
     /* Your mobile-specific styles here */
@@ -664,4 +691,10 @@ body.white{
       {
         text-align:left;
       }
+
+      .skill-badge
+      {
+        flex-basis:30%;
+      }
   }
+
