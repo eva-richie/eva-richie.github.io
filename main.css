@@ -76,15 +76,15 @@ body{
     font-family:Lato,Helvetica,Arial,sans-serif;
     font-size:16px;
     line-height:1.58;
-    color:#555;
+    color:#310612;
     background-color:#fff
 }
 a{
-    color:rgb(173, 0, 179);
+    color:rgb(105, 9, 151);
     text-decoration:underline
 }
 a:focus,a:hover{
-    color:#bd3ec9;
+    color:#8421fa;
     text-decoration:underline
 }
 a:focus{
@@ -101,7 +101,7 @@ img{
     height:auto;
     border-radius: 20px;
     border-color:#a1396d;
-    border:4px solid rgba(110, 66, 103, 0.797);
+    border:4px solid rgba(71, 18, 106, 0.8);
 }
 [role=button]{
     cursor:pointer
@@ -110,12 +110,12 @@ img{
     font-family:Oswald,Helvetica,Arial,sans-serif;
     font-weight:400;
     line-height:1.1;
-    color:#000
+    color:#310719
 }
 .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{
     font-weight:400;
     line-height:1;
-    color:rgb(132, 35, 146)
+    color:rgb(85, 6, 150)
 }
 .h1,.h2,.h3,h1,h2,h3{
     margin-top:25px;
@@ -396,9 +396,9 @@ caption{
     margin-right:auto
 }
 body{
-    background-image:-webkit-linear-gradient(top,#401a4b,#6e1974);
-    background-image:-o-linear-gradient(top,#401a4b,#6e1974 100%);
-    background-image:linear-gradient(180deg,#401a4b,#6e1974);
+    background-image:-webkit-linear-gradient(top,#630024,#aa24b4);
+    background-image:-o-linear-gradient(top,#40171d,#630024 100%);
+    background-image:linear-gradient(180deg,#49152f,#331020); /* real background color */
     background-repeat:repeat-x
 }
 body.white{
@@ -406,7 +406,7 @@ body.white{
     background-image:none
 }
 .white-text-container .fa-icon,.white-text-container a,.white-text-container h1,.white-text-container h2,.white-text-container h3,.white-text-container h4,.white-text-container h5,.white-text-container p{
-    color:rgb(255, 226, 251);
+    color:rgb(213, 184, 255);
     font-family: 'Exo 2';
 }
 .content-wrapper{
@@ -440,8 +440,8 @@ body.white{
 }
 .card{
     border-radius:1.85rem;
-    background-color:rgb(230, 201, 223);
-    border:4px solid rgba(110, 66, 103, 0.797);
+    background-color:rgb(209, 179, 223);
+    border:4px solid rgb(157, 120, 188);
     margin-bottom:3rem
 }
 .card .h2,.card h2{
@@ -589,7 +589,7 @@ body.white{
     .card-block h2 
     {
       text-align:center;
-      background: linear-gradient(to right, #00000000 0%, #234f5a00 43%, #8228851c 46%, #97255322 50%, #8228851c 54%, #234f5a00 57%, #00000000 100%);
+      background: linear-gradient(to right, #0000 0%, #234f5a00 41%, #4b0c621c 43%, #5d126821 50%, #4b0c621c 57%, #234f5a00 59%, #0000 100%);
       padding:6px;
     }
 
