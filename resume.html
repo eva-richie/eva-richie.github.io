@@ -66,15 +66,16 @@
             
             <h2>Résumé</h2>
 
-            <div style="text-align: center;" >
-              <button class="button col-md-6" onclick="setAndShowSection('gameplay-toggle')">Select: Gameplay Programmer</button>
-              <button class="button col-md-6" onclick="setAndShowSection('narrative-toggle')">Select: Narrative Designer</button>
+            <div class="button-container" >
+              <button class="button col-md-6" data-section="gameplay-toggle" onclick="setAndShowSection('gameplay-toggle')">Gameplay Programmer</button>
+              <button class="button col-md-6" data-section="narrative-toggle" onclick="setAndShowSection('narrative-toggle')">Narrative Designer</button>
             </div>
-
+            
+            <br style="display:inline">
 
           <div class="toggle gameplay-toggle" style="display:none">
             <p style="text-align: center; margin-bottom:2%">
-              Current: Gameplay Programmer<br><a href="/assets/documents/Gameplay Programmer.pdf" target="_blank">Direct PDF Link</a>
+              <a href="/assets/documents/Gameplay Programmer.pdf" target="_blank">Direct PDF Link</a>
             </p>
 
             <div class="row auto-resizable-iframe" style="display: flex; flex-direction:column; align-items: center;" >
@@ -88,7 +89,7 @@
 
           <div class="toggle narrative-toggle" style="display:none">
             <p style="text-align: center; margin-bottom:2%">
-              Current: Narrative Designer<br><a href="/assets/documents/Technical Narrative Designer.pdf" target="_blank">Direct PDF Link</a>
+              <a href="/assets/documents/Technical Narrative Designer.pdf" target="_blank">Direct PDF Link</a>
             </p>
             <div class="row auto-resizable-iframe" style="display: flex; flex-direction:column; align-items: center;" >
               <iframe src= 
@@ -139,7 +140,8 @@
 <script>
   document.addEventListener("DOMContentLoaded", function (event) 
   {
-     scrollRevelation('.card');
+     // Apply "Active" class to the correct button on page load
+     setActiveButton(localStorage.getItem('currentToggle') || 'gameplay-toggle');
   });
 
   // Hides all ".toggle" elements and shows all elements of parameter class name
@@ -151,7 +153,10 @@
 
     // Show the selected portfolio section
     const selectedSections = document.querySelectorAll(`.${sectionClass}`);
-    selectedSections.forEach(section =>{ section.style.display = 'block'; scrollRevelation(section); });
+    selectedSections.forEach(section =>{ section.style.display = 'block'; });
+
+    // Select the correct button
+    setActiveButton(sectionClass);
   }
 
   // Save selected section in local and toggle appropriately
@@ -159,6 +164,19 @@
   {
     localStorage.setItem('currentToggle', sectionClass);
     showSection(sectionClass);
+  }
+
+  function setActiveButton(activeClass) 
+  {
+    // Remove "active" class from all buttons
+    document.querySelectorAll('.button').forEach(button => button.classList.remove('active'));
+
+    // Add "active" class to the correct button
+    const activeButton = document.querySelector(`.button[data-section="${activeClass}"]`);
+    if (activeButton) 
+    {
+        activeButton.classList.add('active');
+    }
   }
 
   // Set page onload to initialize to a saved section (or default)

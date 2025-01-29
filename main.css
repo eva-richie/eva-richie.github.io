@@ -595,7 +595,42 @@ body.white{
 
 
 
+/* Button style */
+.button {
+    background-color: #600000; /* Maroon */
+    color: #d8b3fe; /* Text color */
+    border: 2px solid #a52a5b; /* Slightly lighter maroon border */
+    width:36%;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
 
+.button:hover {
+    background-color: #a52a53; /* Lighter maroon on hover */
+    border-color: #ffffff; /* Even lighter maroon border */
+    color: #ffffff;
+}
+
+.button.active {
+    background-color: #8d2d5a; /* Darker maroon when clicked */
+    border-color: rgb(205, 144, 167);
+    transform: scale(0.98);
+
+    outline: 5px solid rgba(165, 42, 42, 0.5); /* Soft maroon focus outline */
+    color: #ffffff;
+}
+
+.button-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+}
 
 
 /* Attempting to let YouTube embeds scale better responsively */
