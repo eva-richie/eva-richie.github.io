@@ -46,7 +46,7 @@
   <header class="white-text-container section-container" style="padding-top:3%; padding-bottom:0%">
     <div class="text-center">
       <img src="./assets/images/salem-richie-name.png" alt="" title=""  class="name-logo">
-      <h3 style="margin-top:0.3%; margin-bottom:0px;">Gameplay Engineer and Narrative Designer</h3>
+      <h3 style="margin-top:0.3%; margin-bottom:0px;">Gameplay Engineer and <br class="only-on-mobile">Narrative Designer</h3>
       <p>
         <a class="fa-icon fa-icon-2x" href="resume.html" title="View my Résumé">
           <i class="fa fa-file-lines"></i>
@@ -68,7 +68,7 @@
 
         <div class="card">
           <div class="card-block">
-            <h2>About Me</h2>
+            <h2>Introduction</h2>
             <div class="row">
               <div class="col-md-3">
                 <p><img src="./assets/images/img-01.jpg" class="img-responsive" alt=""></p>
@@ -111,8 +111,66 @@
                     
               </div>
             </div>
+
+            
+
           </div>
         </div>
+
+
+        <!-- START TOGGLE BUTTONS ->
+
+        <div class="card">
+          <div class="card-block">
+            <h2 style="margin-bottom:1%;">Choose Your Focus</h2>
+            <div class="row">
+
+              <h5 style="text-align:center">Use these toggle buttons to adapt this page for either a tech or design focus!</h5>
+
+              <div class="button-container" >
+                <button class="button col-md-6" data-section="gameplay-toggle" onclick="setAndShowSection('gameplay-toggle')">Gameplay Engineer</button>
+                <button class="button col-md-6" data-section="narrative-toggle" onclick="setAndShowSection('narrative-toggle')">Narrative Designer</button>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <-- END TOGGLE BUTTONS ->
+        
+
+
+
+        <-- START MAIN REEL ->
+
+        <div class="card">
+          <div class="card-block">
+            <h2>Featured Exhibit</h2>
+
+
+
+            <div class="row toggle gameplay-toggle">
+                <iframe class="main-video"
+                src="https://www.youtube.com/embed/0EYVUFKCyEs?enablejsapi=1&rel=0">
+                </iframe> 
+            </div>
+
+            <div class="row toggle toggle-off-default narrative-toggle">
+                <iframe class="main-video"
+                src="https://www.youtube.com/embed/GMKwhS32TX0?enablejsapi=1&rel=0">
+                </iframe> 
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <!- END MAIN REEL -->
+
+
+      
 
         <!-- "first" class is for videos, "second" is for text. This is to forgo side-alternation in mobile layout.
               "side-alternate" class is to be applied to the text so that it alternates sides on desktop.-->        
@@ -137,7 +195,7 @@
               <div class="col-md-6 first auto-resizable-iframe">
 
                 <iframe width="480" height="310"
-                src="https://www.youtube.com/embed/0EYVUFKCyEs">
+                src="https://www.youtube.com/embed/0EYVUFKCyEs?rel=0">
                 </iframe> 
   
               </div>
@@ -198,7 +256,7 @@
               <div class="col-md-6 first auto-resizable-iframe">
 
                 <iframe width="480" height="310"
-                src="https://www.youtube.com/embed/GMKwhS32TX0">
+                src="https://www.youtube.com/embed/GMKwhS32TX0?rel=0">
               </iframe> 
 
               </div>
@@ -214,7 +272,7 @@
               <div class="col-md-6 first auto-resizable-iframe">
 
                 <iframe width="480" height="310"
-                src="https://www.youtube.com/embed/8-9so2joVZA">
+                src="https://www.youtube.com/embed/8-9so2joVZA?rel=0">
               </iframe> 
 
               </div>
@@ -277,7 +335,7 @@
               <div class="col-md-6 first auto-resizable-iframe">
 
                 <iframe width="480" height="310"
-                src="https://www.youtube.com/embed/p-EAY_UiTBI">
+                src="https://www.youtube.com/embed/p-EAY_UiTBI?rel=0">
               </iframe> 
 
               </div>
@@ -293,7 +351,7 @@
               <div class="col-md-6 first auto-resizable-iframe">
 
                 <iframe width="480" height="310"
-                src="https://www.youtube.com/embed/791LNASUr7I">
+                src="https://www.youtube.com/embed/791LNASUr7I?rel=0">
               </iframe> 
 
               </div>
@@ -379,7 +437,7 @@
               <div class="col-md-6 first auto-resizable-iframe">
 
                 <iframe width="480" height="310"
-                src="https://www.youtube.com/embed/ZXBPONrJRzE">
+                src="https://www.youtube.com/embed/ZXBPONrJRzE?rel=0">
                 </iframe> 
 
               </div>
@@ -444,7 +502,7 @@
 
 
                 <iframe width="480" height="310"
-                src="https://www.youtube.com/embed/J9VzphrXUkk">
+                src="https://www.youtube.com/embed/J9VzphrXUkk?rel=0">
               </iframe> 
 
                   
@@ -561,6 +619,87 @@
     </div>
   </div>
 </footer>
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) 
+  {
+     // Apply "Active" class to the correct button on page load
+     setActiveButton(localStorage.getItem('currentToggle') || 'gameplay-toggle');
+  });
+
+  // Hides all ".toggle" elements and shows all elements of parameter class name
+  function showSection(sectionClass) 
+  {
+    // Gett all togglable portfolio sections
+    const sections = document.querySelectorAll('.toggle');
+
+    sections.forEach(section => 
+    {
+      // Hide all sections
+      section.style.display = 'none';
+
+      // Check if the section contains an iframe with a YouTube embed
+      const iframe = section.querySelector('iframe');
+      if (iframe && iframe.src.includes('youtube.com')) 
+      {
+          // Send the pause command to the YouTube iframe
+          const iframeWindow = iframe.contentWindow;
+          iframeWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+      }
+    
+      
+    });
+
+    // Show the selected portfolio section
+    const selectedSections = document.querySelectorAll(`.${sectionClass}`);
+    selectedSections.forEach(section =>{ section.style.display = 'block'; });
+
+    // Select the correct button
+    setActiveButton(sectionClass);
+  }
+
+  // Save selected section in local and toggle appropriately
+  function setAndShowSection(sectionClass) 
+  {
+    localStorage.setItem('currentToggle', sectionClass);
+    showSection(sectionClass);
+  }
+
+  function setActiveButton(activeClass) 
+  {
+    // Remove "active" class from all buttons
+    document.querySelectorAll('.button').forEach(button => button.classList.remove('active'));
+
+    // Add "active" class to the correct button
+    const activeButton = document.querySelector(`.button[data-section="${activeClass}"]`);
+    if (activeButton) 
+    {
+        activeButton.classList.add('active');
+    }
+  }
+
+  // Set page onload to initialize to a saved section (or default)
+  window.onload = () => 
+  {
+    const savedSection = localStorage.getItem('currentToggle');
+    if (savedSection) 
+    {
+      showSection(savedSection);
+    } 
+    else 
+    {
+      // Optionally show a default section if none is saved
+      showSection('gameplay-toggle'); 
+    }
+  };
+</script>
+
+
+
+
 
 </body>
 
