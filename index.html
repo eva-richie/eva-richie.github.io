@@ -118,7 +118,7 @@
         </div>
 
 
-        <!-- START TOGGLE BUTTONS ->
+        <!-- START TOGGLE BUTTONS -->
 
         <div class="card">
           <div class="card-block">
@@ -137,12 +137,12 @@
           </div>
         </div>
 
-        <!- END TOGGLE BUTTONS ->
+        <!-- END TOGGLE BUTTONS -->
         
 
 
 
-        <!- START MAIN REEL ->
+        <!-- START MAIN REEL -->
 
         <div class="card">
           <div class="card-block">
@@ -152,13 +152,13 @@
 
             <div class="row toggle gameplay-toggle">
                 <iframe class="main-video"
-                src="https://www.youtube.com/embed/0EYVUFKCyEs?enablejsapi=1&rel=0">
+                src="https://www.youtube.com/embed/PgNXoij3F0c?enablejsapi=1&rel=0">
                 </iframe> 
             </div>
 
             <div class="row toggle toggle-off-default narrative-toggle">
                 <iframe class="main-video"
-                src="https://www.youtube.com/embed/GMKwhS32TX0?enablejsapi=1&rel=0">
+                src="https://www.youtube.com/embed/zrLVNtYDTlg?enablejsapi=1&rel=0">
                 </iframe> 
             </div>
 
@@ -167,7 +167,7 @@
           </div>
         </div>
 
-        <!- END MAIN REEL -->
+        <!-- END MAIN REEL -->
 
 
       
@@ -175,17 +175,14 @@
         <!-- "first" class is for videos, "second" is for text. This is to forgo side-alternation in mobile layout.
               "side-alternate" class is to be applied to the text so that it alternates sides on desktop.-->        
 
+        <!-- GAMEPLAY START -->
         <!-- HIGHLIGHTS START -->
 
-        <div class="card">
+        <div class="card toggle gameplay-toggle">
           <div class="card-block">
             <h2 style="margin-bottom:1%">Portfolio Highlights</h2>
 
-            <!-- You are seriously way too nosy. So, you want to hire me, right?
-            <p style="text-align: center; margin-bottom:2%"><i>
-                Looking for <a href="tech-samples.html">tech samples,</a> <a href="design-samples.html">design/writing samples,</a> or perhaps a <a href="resume.html">résumé?</a>
-            </i></p>
-            -->
+
             <p class="text-center"><a href="resume.html">View Résumé</a></p>
             
             <!-- EIDOLON START -->
@@ -208,12 +205,13 @@
                   </small></h3>
 
                   <p>
-                    A mystical arena shooter with a card game twist in which astral combatants use abilities inspired by major arcana tarot cards.
+                    A mystical arena shooter with a card game twist in which astral combatants use abilities inspired by Major Arcana tarot cards.
                   </p>
 
                   <p>
-                    Architected emergent combat and navigation behaviors to create player-like AI combatants in a fast-paced combat context.
-                    <br>Integrated traditional tarot symbolism alongside evocative card-shooter mechanics to design and playtest over 20 mystical abilities.
+                    Architected player-like AI behaviors to create variety in gameplay.
+                    Fluid movement is enabled through Behavior Trees and the Environment Query System,
+                    and AI agents utilize every combat feature by interacting with the Gameplay Ability System.
                   </p>
 
                   <p>
@@ -231,7 +229,7 @@
             <div class="row game" id="game-cats">
               <div class="col-md-6 second side-alternate">
                 <h3 class="h4">Cats & Critters: A Dungeon Claw-er 
-                  <br><small>AI Programmer | Technical Lead
+                  <br><small>Technical Lead | AI Programmer
 
                     <br>Fall 2023 - Summer 2024 (Unity Engine; Team of 9)
                   </small></h3>
@@ -309,7 +307,7 @@
 
               <div class="col-md-6 second side-alternate">
                 <h3 class="h4">Inline: Out of Time 
-                  <br><small>Systems Programmer | Technical Lead
+                  <br><small>Technical Lead | Systems Programmer
 
                     <br>Fall 2022 - Summer 2023 (Custom C++ Engine; Team of 12)
                   </small></h3>
@@ -368,7 +366,7 @@
                   </p>
 
                   <p>
-                    Introduced the main concept and narrative arc, engineered the game’s physics simulation and object management, and developed puzzle mechanics and level designs.
+                    Engineered core engine systems such as physics simulation, collision detection, and object management. Organized and implemented the player's animation state machine and developed puzzle mechanics such as growable plants, wind blowers, and physics objects.
                   </p>
 
                   <p>
@@ -378,71 +376,30 @@
               </div>
             </div>
 
+
             <!-- ONION END -->
+
+           
 
           </div>
         </div>
 
         <!-- HIGHLIGHTS END -->
+        <!-- JAMS AND MORE BEGIN -->
 
-        <!-- JAMS AND MORE START -->
 
-        <div class="card">
+        <div class="card toggle gameplay-toggle">
           <div class="card-block">
+
             <h2 style="margin-bottom:1%">Game Jams & More</h2>
             <br>
-
-            <!-- SAROS START -->
-
-            <div class="row game" id="game-saros">
-
-              <div class="col-md-6 second side-alternate">
-                <h3 class="h4">SAROS
-                  <br><small>Narrative Designer | Creative Director
-
-                    <br>Summer 2024 - Present (Unreal Engine; Team of 14)
-                  </small></h3>
-
-                  <p>
-                    A character-driven co-op puzzle platformer game which follows a human boy and a celestial girl through an interplanetary journey.
-                  </p>
-
-                  <p>
-                    Authored design documentation including gamestate flowcharts and a story bible detailing characters, worlds, and key items.
-                  </p>
-
-                  <p>
-                    Prototyped unique sling-and-anchor player controller mechanics to characterize a non-human protagonist through gameplay.
-                  </p>
-
-              </div>
-
-              <div class="col-md-6 first">
-
-
-                <img src="./assets/images/saros-main.jpg" class="img-responsive" alt="">
-
-              </div>
-
-            </div><br><div class="row"><hr></div><br>
-
-            <!-- SAROS END -->
-
-
 
             <!-- TV START -->
 
             <div class="row game" id="game-terror">
 
-              <div class="col-md-6 first auto-resizable-iframe">
 
-                <iframe width="480" height="310"
-                src="https://www.youtube.com/embed/ZXBPONrJRzE?rel=0">
-                </iframe> 
-
-              </div>
-
-              <div class="col-md-6 second">
+              <div class="col-md-6 second side-alternate">
                 <h3 class="h4">Terror Vision 
                   <br><small>Gameplay Programmer | Level Designer
 
@@ -458,12 +415,21 @@
                   </p>
 
                   <p>
-                    Implemented first-person controls, core gameplay mechanics including win and lose states, and some enemy behaviors.
+                    Implemented first-person movement controls, core gameplay mechanics including win and lose states, and enemy behaviors.
                   </p>
 
                   <p>
                     Rated #6 for Horror and #9 for Best Game in <a href="https://itch.io/jam/scream-secrets/rate/2932888" target="_blank">the game jam on Itch.</a>
                   </p>
+
+              </div>
+
+
+              <div class="col-md-6 first auto-resizable-iframe">
+
+                <iframe width="480" height="310"
+                src="https://www.youtube.com/embed/ZXBPONrJRzE?rel=0">
+                </iframe> 
 
               </div>
 
@@ -477,7 +443,17 @@
             <div class="row game" id="game-fish">
               
 
-              <div class="col-md-6 second side-alternate">
+              
+
+              <div class="col-md-6 first auto-resizable-iframe">
+
+                <iframe width="480" height="310"
+                  src="https://www.youtube.com/embed/J9VzphrXUkk?rel=0">
+                </iframe> 
+
+              </div>
+
+              <div class="col-md-6 second">
                 <h3 class="h4">F.I.S.H. - Fernando's Italian Slice House
                   <br><small>Gameplay Programmer | Level Designer
 
@@ -489,23 +465,12 @@
                   </p>
 
                   <p>
-                    Managed scope, feature implementation, and creation of original assets to create a playable product in a single day.
+                    Developed fishy movement physics by programming spring joints and impulse forces. Managed scope, feature implementation, and creation of original assets to create a playable product in a single day.
                   </p>
 
                   <p>
                     <a href="/fish.html">More details on my experience with this project.</a>
                   </p>
-
-              </div>
-
-              <div class="col-md-6 first auto-resizable-iframe">
-
-
-                <iframe width="480" height="310"
-                src="https://www.youtube.com/embed/J9VzphrXUkk?rel=0">
-              </iframe> 
-
-                  
 
               </div>
 
@@ -517,23 +482,19 @@
 
             <div class="row game" id="game-ko-os">
 
-              <div class="col-md-6 first" >
-                <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
-              </div>
-
-              <div class="col-md-6 second">
+              <div class="col-md-6 second side-alternate">
                 <h3 class="h4">K.O.  O.S. 
-                  <br><small>Systems Programmer
+                  <br><small>Systems Programmer | Level Designer
 
                     <br>Fall 2021 (Custom C Engine; Team of 3)
                   </small></h3>
 
                   <p>
-                    A fast-paced 2D platform fighter where customization is key: fighters gain unique abilities and playstyles with a creative point-buy system.
+                    A fast-paced 2D platform fighter where customization is key: players combine unique abilities and playstyles with a point-buy system.
                   </p>
 
                   <p>
-                    Engineered many systems, including character customization, collision detection, animation state machines, and combat mechanics.
+                    Engineered many systems in a low-level framework, including: character customization, collision detection, animation state machines, combat mechanics, and level mechanics.
                   </p>
 
                   <p>
@@ -541,18 +502,292 @@
                   </p>
               </div>
 
+
+              <div class="col-md-6 first" >
+                <img src="./assets/images/img-02.jpg" class="img-responsive" alt="">
+              </div>
+
+
+            </div>
+
+            <!-- KOOS END -->
+
+
+          </div>
+        </div>
+
+
+
+        <!-- JAMS AND MORE END -->
+        <!-- GAMEPLAY END -->
+
+
+
+        <!-- NARRATIVE START -->
+         <!-- HIGHLIGHTS START -->
+
+        <div class="card toggle narrative-toggle toggle-off-default">
+          <div class="card-block">
+
+
+            <h2 style="margin-bottom:1%">Portfolio Highlights</h2>
+            <p class="text-center"><a href="resume.html">View Résumé</a></p>
+
+
+            <!-- EIDOLON START -->
+            
+            <div class="row game" id="game-eidolon">
+
+              <div class="col-md-6 second side-alternate">
+                <h3 class="h4">Eidolon: Fate of Fools 
+                  <br><small>Creative Director | AI Programmer
+
+                    <br>Fall 2024 - Present (Unreal Engine 5; Team of 8)
+                  </small></h3>
+
+                  <p>
+                    A mystical arena shooter with a card game twist in which astral combatants use abilities inspired by Major Arcana tarot cards.
+                  </p>
+
+                  <p>
+                    Integrated traditional tarot symbolism alongside evocative card-shooter mechanics to design and playtest over 20 mystical abilities.
+                    <br>Managed design documentation and facilitated vision meetings to guide level designers and artists towards cohesive results.
+                  </p>
+
+                  <p>
+                    <a href="/eidolon.html">More details on my experience with this project.</a>
+                  </p>
+
+              </div>
+
+              <div class="col-md-6 first auto-resizable-iframe">
+
+                <iframe width="480" height="310"
+                src="https://www.youtube.com/embed/0EYVUFKCyEs?rel=0">
+                </iframe> 
+  
+              </div>
+
               
 
             </div><br><div class="row"><hr></div><br>
 
-            <!-- KOOS END -->
+            <!-- EIDOLON END -->
 
+            <!-- SAROS START -->
+
+            <div class="row game" id="game-saros">
+
+
+              <div class="col-md-6 first">
+
+
+                <img src="./assets/images/saros-main.jpg" class="img-responsive" alt="">
+
+              </div>
+
+              <div class="col-md-6 second">
+                <h3 class="h4">SAROS
+                  <br><small>Narrative Designer
+
+                    <br>Summer 2024 - Present (Unreal Engine 5; Team of 14)
+                  </small></h3>
+
+                  <p>
+                    A character-driven co-op puzzle platformer game which follows a human boy and a celestial girl through an interplanetary journey.
+                  </p>
+
+                  <p>
+                    Authored design documentation including a story bible which details characters, worlds, and key items. <a href="assets/documents/Abridged SAROS Narrative Bible.pdf" target="_blank">View an abridged version here.</a> 
+                  <br>
+                    Collaborated during storyboarding to amplify the impact of key narrative beats, and partnered with a UI artist to design UI elements and document state transitions with gamestate flowcharts.
+                  </p>
+
+              </div>
+
+            </div><br><div class="row"><hr></div><br>
+
+            <!-- SAROS END -->
+
+
+            <!-- INLINE START -->
+
+
+            <div class="row game" id="game-inline">
+              
+
+              <div class="col-md-6 second side-alternate">
+                <h3 class="h4">Inline: Out of Time 
+                  <br><small>Technical Lead | Systems Programmer
+
+                    <br>Fall 2022 - Summer 2023 (Custom C++ Engine; Team of 12)
+                  </small></h3>
+
+                  <p>
+                    High-octane, low-wage action is rewarded through witty achievements in this retro-futuristic rollerskating delivery game.
+                    In addition, I wrote and performed songs on the game's soundtrack to bring the world to life through rhythmic rhetoric. <a href="assets/documents/Inline-Achievements.pdf" target="_blank">All achievements.</a>
+                  </p>
+
+                  <p>
+                      Hosted public playtests at Geek Xtravaganza and implemented Steamworks API features to prepare for the <a href="https://store.steampowered.com/app/2865360/Inline_Out_of_Time/" target="_blank">Steam release.</a>
+                  </p>
+
+                  <p>
+                    <a href="/inline-out-of-time.html">More details on my experience with this project.</a>
+                  </p>
+
+              </div>
+
+              <div class="col-md-6 first auto-resizable-iframe">
+
+                <iframe width="480" height="310"
+                src="https://www.youtube.com/embed/QVukumsL-WY?rel=0">
+              </iframe> 
+
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 first">
+
+                <img src="./assets/images/inline-achieves1.png" class="img-responsive" alt="">
+  
+              </div>
+
+              <div class="col-md-6 second">
+
+                <img src="./assets/images/inline-achieves2.png" class="img-responsive" alt="">
+
+              </div>
+            
+            </div><br><div class="row"><hr></div><br>
+
+            <!-- INLINE END -->
+
+
+            <!-- CATS START -->
+
+            <div class="row game" id="game-cats">
+
+              <div class="col-md-6 first auto-resizable-iframe">
+
+                <iframe width="480" height="310"
+                src="https://www.youtube.com/embed/GMKwhS32TX0?rel=0">
+              </iframe> 
+
+              </div>
+
+              <div class="col-md-6 second">
+                <h3 class="h4">Cats & Critters: A Dungeon Claw-er 
+                  <br><small>Technical Lead | AI Programmer
+
+                    <br>Fall 2023 - Summer 2024 (Unity Engine; Team of 9)
+                  </small></h3>
+
+                  <p>
+                    A whimsical "co-op-petitive" dungeon claw-er where a party of adorable cat wizards explore an ever-changing island of discovery.
+                  </p>
+
+                  <p>
+                    Full of paw-ful puns and other magical mischief, the loading screen spell descriptions in Cats & Critters are nothing to cough hairballs at! <a href="assets/documents/CatsNCritters-LoadingTips.pdf" target="_blank">More examples.</a>
+                    I also assisted in facilitating multiplayer playtesting with groups of all ages, eventually shipping to <a href="https://store.steampowered.com/app/3464080/Cats__Critters_A_Dungeon_Clawer/" target="_blank">Steam.</a>
+                  </p>
+
+                  <p>
+                    <a href="/cats-and-critters.html">More details on my experience with this project.</a>
+                  </p>
+
+              </div>
+            
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 first">
+
+                <img src="./assets/images/cats-loading1.png" class="img-responsive" alt="">
+  
+              </div>
+
+              <div class="col-md-6 second">
+
+                <img src="./assets/images/cats-loading2.png" class="img-responsive" alt="">
+
+              </div>
+            </div>
+
+            <!-- CATS END -->
+
+
+          </div>
+        </div>
+
+        <!-- HIGHLIGHTS END -->
+        <!-- JAMS AND MORE START -->
+
+        <div class="card toggle narrative-toggle toggle-off-default">
+          <div class="card-block">
+            <h2 style="margin-bottom:1%">Game Jams & More</h2>
+            <br>
+            
+            
+
+            <!-- ONION START -->
+
+            <div class="row game" id="game-nowhere-to-grow">
+              
+
+              <div class="col-md-6 second side-alternate">
+                <h3 class="h4">Nowhere to Grow 
+                  <br><small>Level Designer | Physics Programmer
+
+                    <br>Spring 2022 (Custom C Engine; Team of 6)
+                  </small></h3>
+
+                  <p>
+                    A physics-based puzzle platformer about a sentimental onion who solves puzzles by crying on plants to grow them.
+                  </p>
+
+                  <p>
+                    Introduced the main narrative arc and game mechanics revolving around a lonely onion who cries on plants to solve puzzles as he travels in pursuit of finding new light in life.
+                     Developed puzzles utilizing vines, bouncy mushrooms, rain clouds, and more.
+                  </p>
+
+                  <p>
+                    <a href="/nowhere-to-grow.html">More details on my experience with this project.</a>
+                  </p>
+
+              </div>
+
+
+              <div class="col-md-6 first auto-resizable-iframe">
+
+                <iframe width="480" height="310"
+                src="https://www.youtube.com/embed/791LNASUr7I?rel=0">
+              </iframe> 
+
+              </div>
+
+              
+            </div>
+
+            <br><div class="row"><hr></div><br>
+
+            <!-- ONION END -->
+
+            
             <!-- CHARTIDE START -->
 
             <div class="row game" id="game-the-chartide-cases">
               
 
-              <div class="col-md-6 second side-alternate">
+
+              <div class="col-md-6 first">
+                <img src="./assets/images/img-05.jpg" class="img-responsive" alt="">
+              </div>
+
+
+              <div class="col-md-6 second">
                 <h3 class="h4">The Chartide Cases
                   <br><small>Narrative Designer | Systems Programmer
 
@@ -560,11 +795,8 @@
                   </small></h3>
 
                   <p>
-                    A detective game that blends the art of interrogation and clue analysis in an imaginative world where humor, fantasy, and mystery intersect.
-                  </p>
-
-                  <p>
-                    Developed a custom visual scripting tool to manage hundreds of dialogue assets.
+                    A detective game that blends the art of interrogation with clue analysis in a fantasy world where humor, fantasy, and mystery intersect.
+                    Developed a custom visual scripting tool to manage hundreds of dialogue assets and branching progression.
                   </p>
 
                   <p>
@@ -577,18 +809,94 @@
 
               </div>
 
-              <div class="col-md-6 first">
-                <img src="./assets/images/img-05.jpg" class="img-responsive" alt="">
+            </div><br><div class="row"><hr></div><br>
+
+            <!-- CHARTIDE END -->
+
+
+
+            <!-- TV START -->
+
+            <div class="row game" id="game-terror">
+
+              <div class="col-md-6 second side-alternate">
+                <h3 class="h4">Terror Vision 
+                  <br><small>Level Designer | Gameplay Programmer
+
+                    <br>SCREAM SECRETS Game Jam: August 2024 (Unity Engine; Team of 3)
+                  </small></h3>
+
+                  <p>
+                    A bone-chilling, channel-surfing horror game in which key collectables are scattered between three haunted environments. 
+                  </p>
+
+                  <p>
+                    Brainstormed, designed, and whiteboxed three unique levels each with their own thematic identities and perilous threats.
+                    Worked alongside an artist to "channel" iconic horror films through these worlds, including influence from <em>The Thing</em> and <em>Re-Animator.</em>
+                  </p>
+
+                  <p>
+                    Rated #6 for Horror and #9 for Best Game in <a href="https://itch.io/jam/scream-secrets/rate/2932888" target="_blank">the game jam on Itch.</a>
+                  </p>
+
               </div>
+
+              <div class="col-md-6 first auto-resizable-iframe">
+
+                <iframe width="480" height="310"
+                src="https://www.youtube.com/embed/ZXBPONrJRzE?rel=0">
+                </iframe> 
+
+              </div>
+
+
+            </div><br><div class="row"><hr></div><br>
+
+            <!-- TV END -->
+
+
+            <!-- KOOS START -->
+
+            <div class="row game" id="game-ko-os">
+
+              <div class="col-md-6 first" >
+                <img src="./assets/images/ko-os-4.png" class="img-responsive" alt="">
+              </div>
+
+              <div class="col-md-6 second">
+                <h3 class="h4">K.O.  O.S. 
+                  <br><small>Level Designer | Systems Programmer
+
+                    <br>Fall 2021 (Custom C Engine; Team of 3)
+                  </small></h3>
+
+                  <p>
+                    A fast-paced 2D platform fighter where customization is key: fighters gain unique abilities and playstyles with a creative point-buy system.
+                  </p>
+
+                  <p>
+                    Designed a variety of computer-themed abilities, blending humor and interactivity with attacks such as "Data Stream" and "Spam Mail."
+                    Created stages with names derived from the desktop metaphor.
+                  </p>
+
+                  <p>
+                    <a href="/ko-os.html">More details on my experience with this project.</a>
+                  </p>
+              </div>
+
+              
 
             </div>
 
-            <!-- CHARTIDE END -->
+            <!-- KOOS END -->
+
+
 
           </div>
         </div>
 
       <!-- JAMS AND MORE END -->
+      <!-- NARRATIVE END -->
         
       
 
