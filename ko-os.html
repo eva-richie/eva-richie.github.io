@@ -27,7 +27,29 @@
 
   <title>K.O. O.S. - Salem Richie's Website</title>  
 
-
+  <script>
+    // Load and apply the saved theme class to the <html> element before CSS is parsed
+    function loadThemeFromStorage() {
+      const themeMap = {
+        'gameplay-toggle': 'gameplay-theme',
+        'narrative-toggle': 'narrative-theme'
+      };
+  
+      // Retrieve the last selected section from localStorage
+      const savedToggle = localStorage.getItem('currentToggle');
+      
+      // Map it to a theme class, if one exists
+      const themeClass = themeMap[savedToggle];
+      
+      // Apply the theme class to <html> so CSS can style accordingly
+      if (themeClass) {
+        document.documentElement.classList.add(themeClass);
+      }
+    }
+  
+    // Immediately run the function to ensure theme is applied before styles load
+    loadThemeFromStorage();
+  </script>
 
   <link href="./main.css" rel="stylesheet">
   </head>

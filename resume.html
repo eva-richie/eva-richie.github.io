@@ -27,7 +27,29 @@
 
   <title>Résumé - Salem Richie</title>  
 
-
+  <script>
+    // Load and apply the saved theme class to the <html> element before CSS is parsed
+    function loadThemeFromStorage() {
+      const themeMap = {
+        'gameplay-toggle': 'gameplay-theme',
+        'narrative-toggle': 'narrative-theme'
+      };
+  
+      // Retrieve the last selected section from localStorage
+      const savedToggle = localStorage.getItem('currentToggle');
+      
+      // Map it to a theme class, if one exists
+      const themeClass = themeMap[savedToggle];
+      
+      // Apply the theme class to <html> so CSS can style accordingly
+      if (themeClass) {
+        document.documentElement.classList.add(themeClass);
+      }
+    }
+  
+    // Immediately run the function to ensure theme is applied before styles load
+    loadThemeFromStorage();
+  </script>
 
   <link href="./main.css" rel="stylesheet">
   </head>
@@ -144,6 +166,26 @@
      setActiveButton(localStorage.getItem('currentToggle') || 'gameplay-toggle');
   });
 
+  // Adds a tag to overarching HTML to affect CSS themes
+  function applyTheme(sectionClass) 
+  {
+    const themeMap = {
+      'gameplay-toggle': 'gameplay-theme',
+      'narrative-toggle': 'narrative-theme'
+    };
+
+    const themeClass = themeMap[sectionClass];
+    const htmlEl = document.documentElement;
+
+    // Remove any existing theme classes
+    htmlEl.classList.remove('gameplay-theme', 'narrative-theme');
+
+    // Add the new theme class
+    if (themeClass) {
+      htmlEl.classList.add(themeClass);
+    }
+  }
+
   // Hides all ".toggle" elements and shows all elements of parameter class name
   function showSection(sectionClass) 
   {
@@ -157,6 +199,9 @@
 
     // Select the correct button
     setActiveButton(sectionClass);
+
+    // Apply CSS theme 
+    applyTheme(sectionClass);
   }
 
   // Save selected section in local and toggle appropriately
