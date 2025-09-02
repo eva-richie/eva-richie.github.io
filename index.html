@@ -113,13 +113,13 @@
                         <img src="./assets/images/skillIcons/csharp.png" class="img-responsive" title="C# Language">
                         <p>C#</p>
                       </div>
-                      <div class="skill-badge">
-                        <img src="./assets/images/skillIcons/unity.png" class="img-responsive" title="Unity Engine">
-                        <p>Unity Engine</p>
-                      </div>
                       <div class=" skill-badge">
                         <img src="./assets/images/skillIcons/unreal.png" class="img-responsive" title="Unreal Engine">
                         <p>Unreal Engine</p>
+                      </div>
+                      <div class="skill-badge">
+                        <img src="./assets/images/skillIcons/unity.png" class="img-responsive" title="Unity Engine">
+                        <p>Unity Engine</p>
                       </div>
                       <div class="skill-badge">
                         <img src="./assets/images/skillIcons/visualstudio.png" class="img-responsive" title="Microsoft Visual Studio">
@@ -168,7 +168,11 @@
 
         <div class="card">
           <div class="card-block">
-            <h2>Featured Exhibit</h2>
+
+            
+            <h2 id="loading-message">Loading Content...</h2>
+            <h2 class="toggle toggle-off-default gameplay-toggle narrative-toggle">Featured Exhibit</h2>
+            
 
 
 
@@ -207,6 +211,43 @@
 
             <p class="text-center"><a href="resume.html">View Résumé</a></p>
             
+            <!-- SCAFFOLD START -->
+
+            <div class="row game" id="game-scaffold">
+              <div class="col-md-6 second side-alternate">
+                <h3 class="h4">Scaffold Construction Tool 
+                  <br><small>Software Engineer - Contract
+
+                    <br>(Unity Engine)
+                  </small></h3>
+
+                  <p>
+                    This scaffold assembly tool is designed for technicians with minimal 3D software experience: allowing training in a virtual environment.
+                  </p>
+
+                  <p>
+                    Designed and implemented a modular building system that allows intuitive interaction with a variety of connectable scaffolding parts.
+                    <br>Abstracted complex 3D manipulation, such as quaternion rotations for poles and swivel clamps, into a simplified control scheme.
+                  </p>
+
+
+              </div>
+
+              
+
+              <div class="col-md-6 first auto-resizable-iframe">
+
+                <iframe width="480" height="310"
+                src="https://www.youtube.com/embed/aqpBqfMKyb0?rel=0">
+              </iframe> 
+
+              </div>
+
+            </div><br><div class="row"><hr></div><br>
+
+            <!-- SCAFFOLD END -->
+
+
             <!-- EIDOLON START -->
             
             <div class="row game" id="game-eidolon">
@@ -956,8 +997,19 @@
 <script>
   document.addEventListener("DOMContentLoaded", function (event) 
   {
-     // Apply "Active" class to the correct button on page load
-     setActiveButton(localStorage.getItem('currentToggle') || 'gameplay-toggle');
+    // Loading message shows until everything is ready
+    const loadingMessage = document.getElementById('loading-message');
+
+    loadingMessage.style.display = ''
+
+    // Apply "Active" class to the correct button on page load
+    setActiveButton(localStorage.getItem('currentToggle') || 'gameplay-toggle');
+
+    // Hide the loading message after
+    // Wait until the entire page and assets (like images and styles) are fully loaded
+    window.addEventListener('load', function() {
+        loadingMessage.style.display = 'none';
+      });
   });
 
   // Adds a tag to overarching HTML to affect CSS themes
