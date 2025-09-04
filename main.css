@@ -707,13 +707,24 @@ html.narrative-theme .card
     max-width: 80px; /* Limit the size of the image */
   }
 
-  .only-on-mobile {
+  .only-on-desktoppc 
+  {
+    display: block;
+  }
+
+  .only-on-mobile 
+  {
     display: none;
   }
 
   /* Styles for mobile devices in portrait (vertical) orientation */
 @media (max-width: 768px) and (orientation: portrait) {
     /* Your mobile-specific styles here */
+    .only-on-desktoppc
+    {
+        display: none;
+    }
+    
     .only-on-mobile
     {
         display: block;

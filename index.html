@@ -127,7 +127,7 @@
                       </div>
                       <div class="skill-badge">
                         <img src="./assets/images/skillIcons/perforce.png" class="img-responsive" title="Helix Core Source Control (Perforce)">
-                        <p>Perforce</p>
+                        <p>Perforce (P4V)</p>
                       </div>
                     </div>
                     
@@ -140,14 +140,33 @@
         </div>
 
 
+        <!-- START LOADING MESSAGE -->
+
+        <!-- This card will turn off when all content is loaded.-->
+        <div class="card" id="loading-message">
+          <div class="card-block">
+            <h2 style="margin-bottom:1%;">Loading Content...</h2>
+            <div class="row">
+
+              <img class="only-on-desktoppc" src="assets/images/cat-run.gif" style="margin-top:3%; width:100%">
+              <img class="only-on-mobile" src="assets/images/cattype.gif" style="margin:auto; width: 38%">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- END LOADING MESSAGE -->
+
+
         <!-- START TOGGLE BUTTONS -->
 
-        <div class="card">
+        <!-- This card has all toggle tags so it won't show while loading but always otherwise... janky I know.-->
+        <div class="card toggle toggle-off-default gameplay-toggle narrative-toggle">
           <div class="card-block">
             <h2 style="margin-bottom:1%;">Choose Your Focus</h2>
             <div class="row">
 
-              <h5 style="text-align:center">Use these toggle buttons to adapt this page for either a tech or design focus!</h5>
+              <h5 style="text-align:center">Use these toggle buttons to adapt this page for a Tech or Design focus!</h5>
 
               <div class="button-container" >
                 <button class="button col-md-6" data-section="gameplay-toggle" onclick="setAndShowSection('gameplay-toggle')">Gameplay Engineer</button>
@@ -165,13 +184,11 @@
 
 
         <!-- START MAIN REEL -->
-
-        <div class="card">
+        <!-- This card has all toggle tags so it won't show while loading but always otherwise... janky I know.-->
+        <div class="card toggle toggle-off-default gameplay-toggle narrative-toggle">
           <div class="card-block">
 
-            
-            <h2 id="loading-message">Loading Content...</h2>
-            <h2 class="toggle toggle-off-default gameplay-toggle narrative-toggle">Featured Exhibit</h2>
+            <h2>Featured Exhibit</h2>
             
 
 
